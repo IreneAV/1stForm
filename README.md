@@ -1,1 +1,1 @@
-# 1stForm from the Des@rrolladoras program (SAMSUNG)
+# 1stForm from the Des@rrolladoras Samsung program.
