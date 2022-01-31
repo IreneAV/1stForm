@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <script src ="app.js"></script>
+
+        <h1>Formulario Información Alta Telefónica</h1>
+    </head>
+
+  <body>
+    
+    <form action="./procesaFormulario.php"
+    <br/>
+    <br/>
+    <fieldset>
+      <legend>Datos personales</legend>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" value=""
+      maxlength="30"
+      </br>
+      </br>
+      <label for="apellidos">Apellidos:</label>
+      <input type="text" id="apellidos" value=""
+      maxlength="60"
+      <br/> 
+      <br/>
+      <label for="dirección">Dirección:</label>
+      <input type="text"id="dirección" value=""
+      maxlength="60"
+      <br/>
+      <br/>
+      <label for="código postal">Código Postal:</label>
+      <input type="text"id="código" value=""
+      maxlength="5"
+      <br/>
+      <br/>
+      <label for="localidad">Localidad:</label>
+      <input type="text"id="localidad" value=""
+      <br/>
+    </fieldset>
+        <br/>
+
+    <fieldset>
+      <legend>Tipo de contratación</legend>
+        <input type="radio" name="Tc"
+             value="0" checked="checked">
+             Nueva Contratación
+             </input>
+             &nbsp;&nbsp;&nbsp;
+        <input type="radio" name="Tc"
+             value="1" required="required">
+             Portabilidad
+             </input>
+             &nbsp;&nbsp;&nbsp;
+        <input type="radio" name="Tc"
+             value="2" required="required"> 
+             Cambio de contrato
+             </input>
+             <br/><br/>
+      <legend1>Elija la compañía actual:</legend1>
+        <select name= "compañía">
+          <option>Movistar</option>
+          <option>Orange</option>
+          <option>Vodafone</option>
+          <option>Yoigo</option>
+          <option>No tengo ninguna compañía</option>
+        </select>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+      <legend1>En caso de portabilidad, elija la nueva compañía</legend1>
+        <select name="portabilidad">
+          <option>Movistar</option>
+          <option>Orange</option>  
+          <option>Vodafone</option>
+          <option>Yoigo</option>
+        </select>
+      </fieldset>
+      <br/>
+
+    <fieldset>
+     <legend>Datos bancarios</legend>
+        <label for="pais">País:</label> 
+          <input type="text" id="país" pattern= "ES" value="ES"/>
+          <label for="validez" >  (sólo válido ES)</label>
+          <br/>
+        <label for="control IBAN">Control IBAN:</label>
+          <input type="text" id="control" placeholder="XX" maxlength=2 minlength=2 value=""
+          class="2 dig">  (dos dígitos)</label>
+          <br/>
+        <label for="entidad">Entidad:</label>
+          <input type="text"id="entidad" placeholder="XXXX" maxlength=4 minlength=4  value=""
+          class="4 dig"> (cuatro dígitos)</label>
+          <br/>
+        <label for="sucursal">Sucursal:</label>
+          <input type="text" id="sucursal" placeholder="XXXX" maxlength=4 minlength=4 value=""
+          class="4 dig"> (cuatro dígitos)</label>
+          <br/>
+        <label for="dc">DC:</label>
+          <input type="text" id="dc" placeholder="XX" maxlength=2 minlength=2 value=""
+          class="2 dig">  (dos dígitos)</label>
+          <br/>
+        <label for="cuenta">Cuenta:</label>
+          <input type="text" id="cuenta"  placeholder="XXXXXXXXXX" maxlength=10 minlength=10 value=""
+          class="4 dig"> (diez dígitos)</label>
+          <br/>
+        </fieldset>     
+        <br/>
+
+    <fieldset> 
+      <legend>Datos Estadísticos - ¿Cómo nos conoció?</legend>
+      <input type="checkbox" id= "way1" value="TV">
+        <label for="way 1"> A través de la TV</label><br/> 
+      <input type="checkbox" id= "way2" value="Radio">
+        <label for="way2"> A través de la radio</label><br/>
+      <input type="checkbox" id= "way3" value="Internet">
+        <label for="way3"> A través de Internet</label><br/>       
+      <input type="checkbox" id= "way4" value="Otros">
+        <label for="way4"> Otros</label><br/>
+        <br/>
+    
+        <input type="range"         
+          name="valor" id="rating" min="1" max="5" step="1" value="1"/></input>        
+          Valoración [1-5]
+        <br/>
+        <br/>
+        <label for="fecha">Fecha de la Encuesta:&nbsp; </label><input type="date" id="newDate" value="2019-01-01">  
+        <br/>
+        </fieldset>
+        
+      <form action="./procesaFormulario.php">
+        <button type="submit" id="enviarDatos">Enviar Datos</button>
+        <button type="reset" id= "borrar">Borrar Datos</button>
+        </form>  
+
+        <button onclick= "valoracion()" id="show1">Mostrar valoración </button>
+        <button onclick= "getData()" id="show2">Mostrar cuenta </button>  
+        <button onclick="days()" id="show3">Mostrar día Semana</button>
+      </fieldset>
+   </form>
+  </body>
+</html>

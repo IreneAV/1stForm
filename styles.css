@@ -1,0 +1,57 @@
+h1{
+    color:blue;
+    font-weight: bold;
+    text-shadow: 1.5px 2px 2px yellow;
+    text-align: center;
+}
+
+body{
+    background-color: white;
+    font-style:normal;
+}
+
+fieldset{
+    background-color: #00ffff;
+    margin: 3px; 
+    border:groove;
+    border-color: #00ffff;
+    border-radius: 7px;
+}
+
+legend{
+    background-color: red;
+    color:white 
+}
+
+#nombre,#apellidos,#dirección,#código, #localidad,#país,#control,#entidad,#sucursal,#dc,#cuenta{
+    background-color:yellow;
+    border-radius: 5px;
+    border-width: 1.5px;
+    border-color: lightgray;
+}
+
+button:hover,
+button:focus {
+    outline-style: solid;
+    outline-color: blue;
+    outline-width: 2px;
+}
+
+#enviarDatos, #borrar{
+    margin-left: auto;
+    margin-right: 4px;
+    cursor: pointer;
+}
+
+#show1,#show2,#show3{
+    outline: none;
+    margin-top: 2px;
+    background-color: #ffc0cb;
+    border-width: 1px;
+    height: 40px;
+    width: 95px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 2px #999;
+}
